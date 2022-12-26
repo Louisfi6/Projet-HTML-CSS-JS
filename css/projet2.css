@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-image: url(/img/backj.jpg);
+}
+::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #4D4D4D;
+  
+}
+::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color: rgb(121 153 151 / 80%);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track, html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background-color: #4d4d4d;
+}
+
+/*-----------Nav---------*/
+
+nav {
+  border-bottom: 1px solid #6d9fa6;
+  font-family: Fira Sans;
+  width: 100%;
+  background: #212121 !important;
+  padding: 0 100px;
+}
+
+
+nav p{
+  margin: 0 auto;
+}
+
+nav .brand-logo {
+  margin-top: 8px;
+}
+
+
+nav li {
+  border-radius: 2px;
+
+}
+@media screen and (max-width: 1225px) {
+  #mbtn-c {
+    position: absolute;
+    left: -999em;
+  }
+}
+.right a {
+  border-radius: 15px;
+  line-height: 12px;
+  margin: 5px;
+  box-shadow: none !important;
+}
+#mbtn-active {
+  color: #000;
+  background: #c1f1ff !important;
+  border-radius: 15px;
+  line-height: 12px;
+  margin: 5px;
+  box-shadow: none !important;
+  
+}
+
+.right a:hover {
+  color: #000;
+  background: #c1f1ff !important;
+}
+
+.active {
+  color: #000;
+  background: #c1f1ff !important;
+}
+header {
+  
+  background-image: url(/img/backj.jpg);
+  background-position: center;
+  width: 100%;
+  border-bottom: 2px solid #6d9fa6;
+  font-family: Encode Sans;
+  color: white;
+
+}
+/*  -----------text h1---------*/
+.projet{
+  font-family:Encode Sans ;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+     1px 2px 1px #919191,
+     1px 3px 1px #919191,
+     1px 4px 1px #919191,
+     1px 5px 1px #919191,
+     1px 6px 1px #919191,
+     1px 7px 1px #919191,
+     1px 8px 1px #919191,
+     1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  
+}
+
+
+
+/*---------Card----------*/
+.card p {
+  color: #000;
+  font-family:Fira Sans ;
+}
+.object {
+  margin-top: 6% ;
+}
+/*----------Projet1-------------*/
+.row container {
+  margin-top: 50px !important;
+}
+
+/* -------------------footer------------ */
+.footer {
+}
+.footer-one{
+  background: #1C1C1C;
+}
+.footer-two{
+  background: #141414;
+  width: 100%;
+}

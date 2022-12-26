@@ -1,0 +1,385 @@
+ html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar, html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #4D4D4D;
+  
+}
+::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color: rgb(121 153 151 / 80%);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track, html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background-color: #4d4d4d;
+}
+
+body {
+  background: #aebad06b;
+  background-image:url(/img/trait.png);
+}
+
+@media screen and (max-width: 670px){
+  header{
+    min-height: 500px;
+  }
+}
+
+/*-----------Nav---------*/
+
+.nav2 {
+  height: 50px;
+}
+
+nav {
+  border-bottom: 1px solid #6d9fa6;
+  font-family: Fira Sans;
+  width: 100%;
+  background: #212121 !important;
+  padding: 0 100px;
+
+}
+
+
+nav p{
+  margin: 0 auto;
+}
+
+nav .brand-logo {
+  margin-top: 8px;
+}
+
+
+
+nav li {
+  border-radius: 2px;
+
+}
+@media screen and (max-width: 1225px) {
+  #show-login {
+    position: absolute;
+    left: -999em;
+  }
+}
+.right li{
+  margin-right:-5% ;
+}
+.right a{
+  border-radius: 15px;
+  line-height: 35px;
+  margin: 15px;
+  box-shadow: none !important;
+  height: 35px;
+}
+.right a:hover {
+  color: #000 !important;
+  background: #c1f1ff !important;
+}
+#mbtn-active {
+  color: #000;
+  background: #c1f1ff !important; 
+}
+
+/*-------Header--------*/
+header {
+  background: #302c2c;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/img/texture.png);
+  width: 100%;
+  border-bottom: 2px solid #6d9fa6;
+}
+
+.center {
+  text-align: center !important;
+  justify-content: center;
+}
+
+.projet5 {
+  padding-top: 10%;
+}
+.container h1 {
+  font-family:Encode Sans ;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+     1px 2px 1px #919191,
+     1px 3px 1px #919191,
+     1px 4px 1px #919191,
+     1px 5px 1px #919191,
+     1px 6px 1px #919191,
+     1px 7px 1px #919191,
+     1px 8px 1px #919191,
+     1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/*-----------------Card------------- */
+.sect1 {
+  z-index:3 ;
+}
+#cardi {
+  border-radius: 10px;
+  border: 8px solid white;
+  width: 50%;
+}
+#cardi img{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 190%;
+}
+#cardi2 {
+  border-radius: 10px;
+  border: 8px solid white;
+  width: 50%;
+}
+#cardi2 img{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 190%;
+}
+#cardi3 {
+  border-radius: 10px;
+  border: 8px solid white;
+  width: 50%;
+}
+#cardi3 img{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 190%;
+}
+.card-title {
+  color: black !important;
+  padding-left: 50%;
+}
+.card:hover {
+  -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+#us img {
+  border: 1px solid black;
+  border-radius: 500px;
+  overflow: hidden;
+  height: 200px;
+  margin-left: 6%;
+  margin-top: 5%;
+}
+
+/*-----------------------contacter Popup-------------**/
+.center button{
+  line-height: 0px;
+  height: 35px;
+  margin-left: 14%;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600px;
+  background: #212121;
+  color: #ffffff !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: Fira Sans;
+}
+.center button:hover {
+  color: #000 !important;
+  background: #c1f1ff !important;
+}
+.popup {
+  display: none;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top: 600%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 380px;
+  padding: 20px 30px;
+  background: #fff !important;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0,0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.popup.active {
+  display: block;
+  opacity: 1;
+  transform:translate(-50%, -50%) scale(1) ;
+}
+
+.popup .close-btn {
+  
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888 !important;
+  color: #eee !important;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.popup .form h2 {
+  text-align: center;
+  color: #222 !important;
+  margin: 10px 0px 20px;
+  font-size: 25px;
+} 
+.popup .form .form-element{
+  margin: 15px 0px;
+}
+.popup .form .form-element label {
+  font-size: 14px;
+  color: #222 !important;
+}
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="telephone"] {
+  margin-top: 5px;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+.popup .form .form-element input[type="checkbox"] {
+  margin-right: 5px;
+}
+.popup .form .form-element button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #222 !important;
+  color: #f5F5F5 !important;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.popup .form .form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1A79CA;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* -----------------Paralax--------------- */
+.paralax{
+  margin-top: 9%;
+}
+.parallax-container {
+  border-top: 3px solid #4e7074;
+  border-bottom: 3px solid #434242;
+  height: 300px !important;
+}
+.container {
+  width: 100% !important;
+}
+.row {
+  width: 80%;
+}
+.sect1 {
+  background: #cad0d8;
+  border-top: 25px solid #25222A;
+  border: 1px solid  rgb(3, 3, 3,0.37);
+  margin-top: 9%;
+  width: 100% ;
+}
+.sect1 h2{
+  font-family: Signika;
+}
+
+/* ------------------Carousel------------------------ */
+.carousel {
+  width: 100%;
+}
+
+/*---------bouton discover-----*/
+.discover .btn {
+  border-radius: 20px !important;
+  background: linear-gradient(29deg, #a28f71 0%, #0092b3 84%);
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: Encode Sans;
+  padding: 0 20px;
+}
+/*---------Presentation projet------*/
+.projet2 h2{
+  font-family: Fira Sans; 
+}
+.us h2{
+  font-family: Fira Sans;
+}
+.card-image1 {
+  width: 40%;
+}
+
+/*--------------bouton nav---------------*/
+.btn-primary {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/*--------------bouton form footer---------------*/
+.bouton-footer {
+  color: #ffffff;
+  background-color: #00b9d1!important;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/*--------Footer--------- */
+.footer-one{
+  background: #1C1C1C;
+}
+.footer-two{
+  background: #141414;
+  width: 100%;
+}
+
+/* ---------- egg ----------- */
+#egg1 {
+ height: 1px;
+}
+#cont {
+  height: 10%;
+   margin-left: 30%;
+  transform: translate(-50%, -50%);
+}
+.btn-confettis {
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 7px 0 rgb(160,160,160);
+    font-size: 30px;
+}
+.btn-confettis:active {
+    box-shadow: 0 0px 0 rgb(160,160,160);
+}
+.slot {
+    perspective: 100%;
+}
+.slot div {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}

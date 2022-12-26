@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>replit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper grey darken-4">
+          <a href="#" class="brand-logo center"> <img id="brand-logo" src="img/logo.png" alt="Logo" height="40">
+          </a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons"> menu </i>
+          </a>
+          <div class="left">
+            <p class="hide-on-med-and-down"> <a href="#"> Projet 5 </a></p>
+          </div>
+
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a id="mbtn-active" class="btn-nav btn-primary turned-button" href="#"> Accueil</a>
+            </li>
+            <li>
+              <a class="btn-nav btn-primary turned-button" href="#projects"> Projets </a>
+            </li>
+            <li>
+              <a class="btn-nav btn-primary turned-button" href="#us1"> À propos </a>
+            </li>
+            <li>
+              <div class="center">
+                <button id="show-login">Contact</button>
+              </div>
+              <!-- Nous contacter pop-up -->
+              <div class="popup">
+                <div class="close-btn">&times;</div>
+                <div class="form">
+                  <h2> Contact</h2>
+                  <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Votre email" onkeydown="easter2()">
+                  </div>
+                  <div class="form-element">
+                    <label for="telephone">Telephone</label>
+                    <input type="text" id="telephone" placeholder="Votre télephone">
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                  </div>
+                  <div class="form-element">
+                    <button> Envoyer </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li> <a class="" href="#"> Accueil</a> </li>
+      <li> <a class="" href="#projects"> Projet </a> </li>
+      <li> <a class="" href="#us1"> À propos </a> </li>
+      <li> <a class="" href="#contact"> Contact </a> </li>
+    </ul>
+
+    <!-- carouselle -->
+
+    <div class="row">
+      <div class="col s12 l4">
+        <div class="container">
+          <h1>PROJET 5</h1>
+        </div>
+        <!-- Discover -->
+        <div class="col s12 l4 ">
+          <div class="discover">
+            <a href="#" class="btn" id="eeg1" onclick="window.location.href = 'https://guardia.school/'">Découvrir</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+    <div class="col s12 l6 ">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/one.jpg" alt="image1"></a>
+        <a class="carousel-item" href="#two!"><img src="img/two.jpg" alt="image2"></a>
+        <a class="carousel-item" href="#three!"><img src="img/three.jpg" alt="image3"></a>
+        <a class="carousel-item N/A
+                transparent" href="#four!"><img src="img/four.jpg" alt="image4"></a>
+      </div>
+    </div>
+
+    <div class="hide-on-med-and-down">
+      <div class="row" id="egg1">
+        <div class="col s12 l6 m4 ">
+          <div class="container" id="cont">
+            <div class="slot"></div>
+            <button class="btn-confettis">📱</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <!-- partie n°2 projets Card -->
+  <div class="nav1" id="projects"></div>
+  <section class="projet2">
+    <div class="sect1">
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m4">
+            <h2 class="header">Projet 1</h2>
+            <div class="card">
+              <div class="card-image" id="cardi">
+                <img src="img/insta1.PNG" alt="insta1">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>Pour plus d'informations, cliquez sur le lien ci-dessous.</p>
+                </div>
+                <div class="card-action">
+                  <a href="projet.html">Go !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <h2 class="header">Projet 2</h2>
+            <div class="card">
+              <div class="card-image" id="cardi2">
+                <img src="img/insta2.jpg" alt="insta2">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>Pour plus d'informations, cliquez sur le lien ci-dessous.</p>
+                </div>
+                <div class="card-action">
+                  <a href="projet2.html">Go !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <h2 class="header">Projet 3</h2>
+            <div class="card">
+              <div class="card-image" id="cardi3">
+                <img src="img/insta3.jpg" alt="insta3">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>Pour plus d'informations, cliquez sur le lien ci-dessous.</p>
+                </div>
+                <div class="card-action">
+                  <a href="projet3.html">Go !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- parallaxe 1 -->
+  <div class="paralax">
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/paralax2.jpg" id="img1" alt="" class="responsive-img">
+      </div>
+    </div>
+
+
+    <!-- section qui sommes-nous -->
+    <div class="nav2" id="us1"></div>
+    <div id="us">
+      <div class="row container">
+        <h2 class="header">Qui sommes-nous ?</h2>
+
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image1">
+              <img src="img/romain.jpg" alt="">
+              <span class="card-title">Romain</span>
+            </div>
+            <!-- Card -->
+            <div class="card-content">
+              <p>Romain est un étudiant chez Guardia Cybersecurity School. Après avoir réalisé un bac scientifique
+                avec
+                des mathématiques et de la physique-chimie, Romain s'est tourné vers l'informatique et notamment la
+                cybersécurité.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col s12 l6">
+          <div class="card">
+            <div class="card-image1">
+              <img src="img/louis.jpg" alt="">
+              <span class="card-title" id="btn1">Louis</span>
+            </div>
+            <div class="card-content">
+              <p>Louis est un étudiant chez Guardia Cybersecurity School. Après avoir réalisé un bac scientifique avec
+                des mathématiques et de la physique-chimie, Louis s'est tourné vers l'informatique et notamment la
+                cybersécurité.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- parallaxe 2 -->
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/paralax1.jpg" alt="paralax" class="responsive-img" id="img2">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer -->
+  <section class="footer" id="contact">
+    <footer class="footer-one">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h4 class="white-text"> Nous contacter</h4>
+            <div class="hide-on-large-only">
+              <div class="form">
+                <div class="form-element">
+                  <label for="email">Email</label>
+
+                </div>
+                <div class="form-element">
+                  <label for="telephone">Telephone</label>
+                  <input type="text" placeholder="Votre télephone">
+                </div>
+                <div class="form-element">
+                  <input type="checkbox" name="remember-me">
+                  <label for="remember-me">Remember me</label>
+                </div>
+                <div class="form-element">
+                  <button class="bouton-footer"> Envoyer </button>
+                </div>
+              </div>
+            </div>
+            <div class="hide-on-med-and-down">
+              <p class="grey-text"> rarpin@guardiaschool.fr</p>
+              <p class="grey-text"> lhoudiarne@guardiaschool.fr</p>
+            </div>
+          </div>
+          <div class="col s12 l6">
+            <h4 class="white-text"> Réseaux sociaux</h4>
+            <ul>
+              <li><a href="#" class="grey-text ">Facebook</a></li>
+              <li><a href="#" class="grey-text">Instagram</a></li>
+              <li><a href="#" class="grey-text">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-two">
+        <div class="col s12 l6">
+          <p class="white-text">&copy; Romain-Louis</p>
+        </div>
+        <div class="col s12 l6">
+          <p class="white-text"> Designed by Romain and Louis</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="html2canvas.min.js"></script>
+  <script src="chance.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
